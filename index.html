@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Beautiful Girl ❤️</title>
+
+<style>
+
+body{
+background:linear-gradient(45deg,#ff4e8a,#ff99cc,#ff4e8a);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:cursive;
+overflow:hidden;
+color:white;
+text-align:center;
+}
+
+h1{
+font-size:45px;
+animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px white;}
+to{ text-shadow:0 0 30px pink;}
+}
+
+button{
+padding:15px 35px;
+font-size:20px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff2e7a;
+cursor:pointer;
+margin-top:40px;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+.heart{
+position:absolute;
+color:red;
+animation:fall 6s linear infinite;
+}
+
+@keyframes fall{
+0%{top:-10%;opacity:1}
+100%{top:110%;opacity:0}
+}
+
+</style>
+</head>
+
+<body>
+
+<div>
+
+<h1>
+I have seen the prettiest girl in my whole life ❤️
+</h1>
+
+<h2>
+Don't look here and there...  
+Please open it 💌
+</h2>
+
+<button onclick="openPage()">Open Surprise 🎁</button>
+
+</div>
+
+<script>
+
+function openPage(){
+window.location="page1.html";
+}
+
+for(let i=0;i<30;i++){
+
+let heart=document.createElement("div");
+heart.innerHTML="❤️";
+heart.className="heart";
+heart.style.left=Math.random()*100+"%";
+heart.style.fontSize=(20+Math.random
